@@ -1,0 +1,147 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	background-color: #ff5900;
+}
+
+header,
+footer {
+	background-color: #ff5900;
+}
+
+h1, .h1 {
+    font-size: 36px;
+    text-align: center;
+    color: white;
+}
+
+h1 small {
+	font-size: 60%;
+	color: #ffccb0;
+}
+
+h6 small {
+	font-size: 85%;
+	font-weight: bold;
+	color: #ffccb0;
+}
+
+.h6, h6 {
+	font-weight: normal;
+	color: #fff;
+    display: inline;
+}
+
+main {
+	
+	background-color: #fff;
+}
+
+.navbar-inverse {
+	width: 90%;
+	margin-left: auto;
+	margin-right: auto;
+    background-color: #ff5900;
+    border-color: #ff5900;
+}
+
+.navbar-inverse .navbar-brand {
+    color: #fff;
+    padding-top: 20px;
+}
+
+.navbar-inverse .navbar-nav li a {
+    color: #fff;
+    padding-top: 20px;
+}
+
+.navbar-inverse .navbar-toggle {
+    border-color: #fff;
+}
+
+.navbar-inverse .navbar-toggle:focus, 
+.navbar-inverse .navbar-toggle:hover {
+    background-color: #e65000;
+}
+
+.navbar-inverse .navbar-collapse, 
+.navbar-inverse .navbar-form {
+    border-color: #ffccB0;
+}
+
+.container .list-inline {
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 25px;
+	color: #fff;
+	text-align: center;
+}
+
+.tagline {
+	margin-top: 10px;
+}
+
+.icons {
+	font-size: 25px;
+	margin-top: 10px;
+	float: right;
+}
+
+.icons a {
+	color: #fff;
+}
+
+.left,
+.center,
+.right {
+	margin: 20px auto;
+}
+
+.blurb {
+	font-size: 18px;
+	line-height: 36px;
+}
+
+/* Alert Section. To be removed after site is complete */
+.alert {
+	color: #ff5900;
+	font-weight: bold;
+	animation: blinker 1.5s linear infinite;
+}
+
+@keyframes blinker {  
+  50% { opacity: 0; }
+}
+/* End Alert Section */
+
+.thumbnail {
+	max-height: 300px;
+	border-radius: 50%;
+	border: transparent;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.btn-default {
+    color: #fff;
+    background-color: #ff5900;
+    border-color: #ffccb0;
+}
+
+.btn-default:hover {
+    color: #fff;
+    background-color: #e65000;
+    border-color: #ffccb0;
+}
+
+#button {
+	width: 111px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#button button:focus {
+    outline: none;
+}
