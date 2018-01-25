@@ -3,12 +3,12 @@
 }
 
 body {
-	background-color: #ff5900;
+	background-color: #00a6ff;
 }
 
 header,
 footer {
-	background-color: #ff5900;
+	background-color: #00a6ff;
 }
 
 h1, .h1 {
@@ -19,13 +19,13 @@ h1, .h1 {
 
 h1 small {
 	font-size: 60%;
-	color: #ffccb0;
+	color: #b0e3ff;
 }
 
 h6 small {
 	font-size: 85%;
 	font-weight: bold;
-	color: #ffccb0;
+	color: #b0e3ff;
 }
 
 .h6, h6 {
@@ -43,8 +43,8 @@ main {
 	width: 90%;
 	margin-left: auto;
 	margin-right: auto;
-    background-color: #ff5900;
-    border-color: #ff5900;
+    background-color: #00a6ff;
+    border-color: #00a6ff;
 }
 
 .navbar-inverse .navbar-brand {
@@ -63,12 +63,12 @@ main {
 
 .navbar-inverse .navbar-toggle:focus, 
 .navbar-inverse .navbar-toggle:hover {
-    background-color: #e65000;
+    background-color: #0096e6;
 }
 
 .navbar-inverse .navbar-collapse, 
 .navbar-inverse .navbar-form {
-    border-color: #ffccB0;
+    border-color: #b0e3ff;
 }
 
 .container .list-inline {
@@ -106,7 +106,7 @@ main {
 
 /* Alert Section. To be removed after site is complete */
 .alert {
-	color: #ff5900;
+	color: #00a6ff;
 	font-weight: bold;
 	animation: blinker 1.5s linear infinite;
 }
@@ -126,14 +126,14 @@ main {
 
 .btn-default {
     color: #fff;
-    background-color: #ff5900;
-    border-color: #ffccb0;
+    background-color: #00a6ff;
+    border-color: #b0e3ff;
 }
 
 .btn-default:hover {
     color: #fff;
-    background-color: #e65000;
-    border-color: #ffccb0;
+    background-color: #0096e6;
+    border-color: #b0e3ff;
 }
 
 #button {
