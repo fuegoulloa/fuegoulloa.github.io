@@ -13,41 +13,43 @@
 </head>
 
 <body>
-<!--Top section, includes nav bar (logo on left side, navigation links on right side); then on next line header with my name, and right underneath the technologies I know-->
+	<!--Primary Header, on top, contains Nav Bar-->
 	<header class="container-fluid">
+		<!--Navigation Bar -->
 		<nav class="navbar navbar-inverse">
 		  <div class="container">
+
 		    <div class="navbar-header">
+		    <!--Hamburger Button for Mobile Version -->
 		      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
 		        <span class="sr-only">Toggle navigation</span>
 		        <span class="icon-bar"></span>
 		        <span class="icon-bar"></span>
 		        <span class="icon-bar"></span>
 		      </button>
+		      <!--Logo & Brand-->
 		      <a class="navbar-brand" href="#"><span class="glyphicon glyphicon-fire" aria-hidden="true"></span> Pipistrello</a>
 		    </div>
+
+		    <!--Menu Items on the Right (Collapsed on Mobile Version)-->
 		    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 		      <ul class="nav navbar-nav navbar-right">
 		        <li><a href="#">About</a></li>
-		        <li><a href="#">Portfolio</a></li>
+		        <li><a href="#">Samples</a></li>
 		        <li><a href="#">Contact</a></li>
 		      </ul>
 		    </div>
-		  </div>
-		</nav>
-		<div class="container">
+
+		  </div><!--End Parent Container-->
+		</nav><!--End Nav Bar-->
+	</header><!--End Primary Header Section-->
+
+	<!--Secondary Header for Name and Tagline-->
+	<header>
+		<div id="temp">
 			<h1>Luis Ulloa<br> <small>Self-taught Web Developer</small></h1>
 		</div>
-		<div class="container">
-			<ul class="list-inline">
-				<li>HTML5</li>
-				<li>CSS3</li>
-				<li>Bootstrap</li>
-				<li>Javascript</li>
-				<li>jQuery</li>
-			</ul>
-		</div>
-	</header>
+	</header><!--End Secondary Header Section-->
 
 	<main>
 		<div class="container">
@@ -70,7 +72,7 @@
 			</div>
 		</div>
 	</main>
-	<footer class="container">
+	<footer class="container-fluid">
 		<div class="tagline col-xs-6 col-sm-4">
 			<h6>Made with  <i class="fa fa-headphones" aria-hidden="true"></i>  &amp;  <i class="fa fa-glass" aria-hidden="true"></i>  in Metro Atlanta<br><small>by Luis Ulloa</small></h6>
 		</div>
