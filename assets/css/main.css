@@ -17,7 +17,7 @@ h1 small {
 	color: #00a6ff;
 }
 
-h3 {
+h3, .sample-link {
 	text-align: center;
     color: #00a6ff;	
 }
@@ -89,23 +89,6 @@ h6, .h6 {
 .right {
 	margin: 20px auto;
 }
-
-.blurb {
-	font-size: 18px;
-	line-height: 36px;
-}
-
-/* Alert Section. To be removed after site is complete */
-.alert {
-	color: #00a6ff;
-	font-weight: bold;
-	animation: blinker 1.5s linear infinite;
-}
-
-@keyframes blinker {  
-  50% { opacity: 0; }
-}
-/* End Alert Section */
 
 .thumbnail {
 	border-radius: 5%;
