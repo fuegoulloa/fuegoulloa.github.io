@@ -87,7 +87,10 @@ h6, .h6 {
 .left,
 .center,
 .right {
-	margin: 20px auto;
+	width: 380px;
+	background-color: #fff;
+	border-radius: 5px;
+	margin: 15px 2px;
 }
 
 .thumbnail {
