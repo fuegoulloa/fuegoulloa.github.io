@@ -17,6 +17,11 @@ h1 small {
 	color: #00a6ff;
 }
 
+h3 {
+	text-align: center;
+    color: #00a6ff;	
+}
+
 h6 small {
 	font-size: 85%;
 	font-weight: bold;
@@ -103,8 +108,7 @@ h6, .h6 {
 /* End Alert Section */
 
 .thumbnail {
-	max-height: 300px;
-	border-radius: 50%;
+	border-radius: 5%;
 	border: transparent;
 	margin-left: auto;
 	margin-right: auto;
