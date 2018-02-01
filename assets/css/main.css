@@ -9,12 +9,12 @@ body {
 h1, .h1 {
     font-size: 36px;
     text-align: center;
-    color: white;
+    color: #00a6ff;
 }
 
 h1 small {
 	font-size: 60%;
-	color: #b0e3ff;
+	color: #00a6ff;
 }
 
 h6 small {
