@@ -3,12 +3,7 @@
 }
 
 body {
-	background-color: #00a6ff;
-}
-
-header,
-footer {
-	background-color: #00a6ff;
+	background-color: #f9f9fa;
 }
 
 h1, .h1 {
@@ -34,9 +29,8 @@ h6 small {
     display: inline;
 }
 
-main {
-	
-	background-color: #fff;
+.container-fluid {
+	background-color: #00a6ff;
 }
 
 .navbar-inverse {
