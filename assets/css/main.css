@@ -17,6 +17,11 @@ h1 small {
 	color: #00a6ff;
 }
 
+h3, .sample-link {
+	text-align: center;
+    color: #00a6ff;	
+}
+
 h6 small {
 	font-size: 85%;
 	font-weight: bold;
@@ -82,29 +87,14 @@ h6, .h6 {
 .left,
 .center,
 .right {
-	margin: 20px auto;
+	width: 380px;
+	background-color: #fff;
+	border-radius: 5px;
+	margin: 15px 2px;
 }
-
-.blurb {
-	font-size: 18px;
-	line-height: 36px;
-}
-
-/* Alert Section. To be removed after site is complete */
-.alert {
-	color: #00a6ff;
-	font-weight: bold;
-	animation: blinker 1.5s linear infinite;
-}
-
-@keyframes blinker {  
-  50% { opacity: 0; }
-}
-/* End Alert Section */
 
 .thumbnail {
-	max-height: 300px;
-	border-radius: 50%;
+	border-radius: 5%;
 	border: transparent;
 	margin-left: auto;
 	margin-right: auto;
