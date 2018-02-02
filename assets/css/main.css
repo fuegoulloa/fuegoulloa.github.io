@@ -17,7 +17,7 @@ h1 small {
 	color: #00a6ff;
 }
 
-h3, .sample-link {
+h3, h4, .sample-link {
 	text-align: center;
     color: #00a6ff;	
 }
@@ -92,6 +92,10 @@ h6, .h6 {
 	margin-bottom: 25px;
 }
 
+.pane-image {
+	margin-top: 15px;
+}
+
 .pane-title, .sample-link {
 	padding-top: 15px;
 	padding-bottom: 15px;
@@ -102,6 +106,11 @@ h6, .h6 {
 	border: transparent;
 	margin-left: auto;
 	margin-right: auto;
+}
+
+.pane-blurb {
+	font-size: 15px;
+	padding: 0 15px 10px 15px;
 }
 
 .btn-default {
