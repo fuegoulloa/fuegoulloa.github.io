@@ -84,17 +84,21 @@ h6, .h6 {
 	color: #fff;
 }
 
-.left,
-.center,
-.right {
-	width: 380px;
+.inner-shell {
 	background-color: #fff;
+	box-shadow: 1px 1px 3px #00a6ff;
 	border-radius: 5px;
-	margin: 15px 2px;
+	margin-top: 25px;
+	margin-bottom: 25px;
+}
+
+.pane-title, .sample-link {
+	padding-top: 15px;
+	padding-bottom: 15px;
 }
 
 .thumbnail {
-	border-radius: 5%;
+	border-radius: 10px;
 	border: transparent;
 	margin-left: auto;
 	margin-right: auto;
