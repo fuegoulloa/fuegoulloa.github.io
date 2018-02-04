@@ -115,6 +115,11 @@ h6, .h6 {
 	padding: 0 15px 10px 15px;
 }
 
+.contact-button {
+	width: 93px;
+	margin: 25px auto;
+}
+
 .btn-default {
     color: #fff;
     background-color: #00a6ff;
