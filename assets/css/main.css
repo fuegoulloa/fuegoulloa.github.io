@@ -120,6 +120,10 @@ a {
 	padding: 0 15px 10px 15px;
 }
 
+.blue-highlight {
+	color: #00a6ff;
+}
+
 .contact-button {
 	width: 94px;
 	margin: 25px auto;
