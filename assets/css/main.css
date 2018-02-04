@@ -34,6 +34,11 @@ h6, .h6 {
     display: inline;
 }
 
+a {
+	color: #00a6ff;
+	text-decoration: none;
+}
+
 .container-fluid {
 	background-color: #00a6ff;
 }
@@ -116,8 +121,13 @@ h6, .h6 {
 }
 
 .contact-button {
-	width: 93px;
+	width: 94px;
 	margin: 25px auto;
+}
+
+.ui.basic.blue.button, .ui.basic.blue.buttons .button {
+    box-shadow: 0 0 0 2px #00a6ff inset!important;
+    font-weight: 800!important;
 }
 
 .btn-default {
