@@ -199,3 +199,21 @@ a {
 	background-position: top left no-repeat;
 	height: 355px;
 }
+
+.sample04 {
+	background-image: url("../img/taskListSmall.png");
+	background-position: top left no-repeat;
+	height: 355px;
+}
+
+.sample05 {
+	background-image: url("../img/colorGameSmall.png");
+	background-position: top left no-repeat;
+	height: 355px;
+}
+
+.sample06 {
+	background-image: url("../img/landingPageSmall.png");
+	background-position: top left no-repeat;
+	height: 355px;
+}
