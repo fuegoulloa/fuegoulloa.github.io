@@ -79,6 +79,11 @@ a {
     border-color: #b0e3ff;
 }
 
+main {
+	width: 900px;
+	margin: 0 auto;
+}
+
 .tagline {
 	margin-top: 10px;
 }
