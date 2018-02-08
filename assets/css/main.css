@@ -113,6 +113,11 @@ a {
 	padding-bottom: 15px;
 }
 
+.image-container {
+	width: 85%;
+	margin: 0 auto;
+}
+
 .thumbnail {
 	border-radius: 10px;
 	border: transparent;
