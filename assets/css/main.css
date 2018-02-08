@@ -183,38 +183,32 @@ a {
 	border-bottom: 5px solid #00a6ff;
 }
 
-.sample01 {
-	background-image: url("../img/beerAppSmall.png");
-	background-position: top left no-repeat;
+.sample {
+	background-size: cover;
+	background-position: center;
 	height: 355px;
 }
 
-.sample02 {
-	background-image: url("../img/visualBlogSmall.png");
-	background-position: top left no-repeat;
-	height: 355px;
+#sample01 {
+	background-image: url("../img/beerApp.png");
 }
 
-.sample03 {
-	background-image: url("../img/pataTapSmall.png");
-	background-position: top left no-repeat;
-	height: 355px;
+#sample02 {
+	background-image: url("../img/visualBlog.png");
 }
 
-.sample04 {
-	background-image: url("../img/taskListSmall.png");
-	background-position: top left no-repeat;
-	height: 355px;
+#sample03 {
+	background-image: url("../img/pataTap.png");
 }
 
-.sample05 {
-	background-image: url("../img/colorGameSmall.png");
-	background-position: top left no-repeat;
-	height: 355px;
+#sample04 {
+	background-image: url("../img/taskList.png");
 }
 
-.sample06 {
-	background-image: url("../img/landingPageSmall.png");
-	background-position: top left no-repeat;
-	height: 355px;
+#sample05 {
+	background-image: url("../img/colorGame.png");
+}
+
+#sample06 {
+	background-image: url("../img/landingPage.png");
 }
