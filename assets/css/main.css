@@ -104,6 +104,7 @@ a {
 
 .inner-shell:hover {
 	box-shadow: 1px 1px 2px 2px rgba(0,165,251,0.8);
+	opacity: 0.8;
 }
 
 .pane-profile-pic {
