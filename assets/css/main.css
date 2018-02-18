@@ -196,10 +196,12 @@ a {
 
 #sample01 {
 	background-image: url("../img/beerApp.png");
+	background-position: top left;
 }
 
 #sample02 {
 	background-image: url("../img/visualBlog.png");
+	background-position: top left;
 }
 
 #sample03 {
