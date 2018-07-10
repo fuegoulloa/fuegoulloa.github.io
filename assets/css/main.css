@@ -1,9 +1,11 @@
+
 * {
 	box-sizing: border-box;
 }
 
 body {
 	background-color: #f9f9fa;
+	/*background-color: #00a6ff;*/
 }
 
 h1, .h1 {
@@ -79,7 +81,7 @@ a {
     border-color: #b0e3ff;
 }
 
-.tagline {
+.tagline01 {
 	margin-top: 10px;
 }
 
@@ -104,7 +106,6 @@ a {
 
 .inner-shell:hover {
 	box-shadow: 1px 1px 2px 2px rgba(0,165,251,0.8);
-	opacity: 0.8;
 }
 
 .pane-profile-pic {
@@ -200,27 +201,176 @@ a {
 }
 
 #sample01 {
-	background-image: url("../img/beerApp.png");
+	background-image: url("../../assets/img/beerApp.png");
 	background-position: top left;
 }
 
 #sample02 {
-	background-image: url("../img/visualBlog.png");
+	background-image: url("../../assets/img/visualBlog.png");
 	background-position: top left;
 }
 
 #sample03 {
-	background-image: url("../img/pataTap.png");
+	background-image: url("../../assets/img/pataTap.png");
 }
 
 #sample04 {
-	background-image: url("../img/taskList.png");
+	background-image: url("../../assets/img/taskList.png");
 }
 
 #sample05 {
-	background-image: url("../img/colorGame.png");
+	background-image: url("../../assets/img/colorGame.png");
 }
 
 #sample06 {
-	background-image: url("../img/landingPage.png");
+	background-image: url("../../assets/img/landingPage.png");
+}
+
+/*--------------------------------*/
+/* Main and form styles */
+	.parent {
+		width: 420px;
+		height: 325px;
+		padding: 0 40px;
+		margin: 0 auto;
+	}
+
+	.parent, .contact-form, .contact-form h1 {
+		background-color: #f9f9fa;
+	}
+
+	.contact-form h1 {
+		text-align: center;
+		padding: 35px 0;
+	}
+
+	.contact-form fieldset {
+		border: none;
+	}
+
+	.contact-form label {
+		display: block;
+		margin: 15px auto 5px auto;
+	}
+
+	.contact-form input {
+	    width: 320px;
+	    height: 40px;
+	    padding: 10px;
+	    border: 1px solid #00a6ff;
+	    border-radius: 5px;
+	    margin-left: 0;
+	    font-size: 16px;
+	}
+
+	.contact-form button {
+		display: block;
+		width: 320px;
+		height: 55px;
+		padding: 15px;
+		border: none;
+		border-radius: 3px;
+		margin: 10px auto 0 10px;
+		background-color: #00a6ff;	
+		color: #FFF;
+		font-size: 18px;
+	}
+
+	.contact-form button:hover {
+		opacity: 0.8;
+	}
+
+	.disclaimer {
+		width: 400px;
+		color: #262627;
+		margin: 0 auto 10px auto;
+	}
+/* End main and form styles */
+
+.headings {
+	font-weight: bold;
+	text-transform: uppercase;
+	text-align: center;
+}
+
+.buttons {
+	margin: 20px auto;
+}
+
+.buttons li {
+	list-style-type: none;
+	display: inline-block;
+}
+
+button {
+	width: 100px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	border: 3px solid;
+	border-radius: 3px;
+	margin: 0 5px;
+	font-size: 14px;
+	font-weight: bold;
+}
+
+p {
+	padding: 5px 20px 0 20px;
+}
+
+.no_show {
+	display: none;
+}
+
+.active {
+	border: none;
+	color: #fff;
+	background-color: #00a6ff;
+	text-transform: uppercase;
+	text-decoration: underline;
+	outline: none;
+}
+
+.inactive {
+	border: none;
+	color: #fff;
+	background-color: #00a6ff;
+}
+
+/*Pop up windows styles for samples*/
+/* The Modal (background) */
+.open-samples {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.samples-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 70%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
 }

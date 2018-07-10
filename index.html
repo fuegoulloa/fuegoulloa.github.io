@@ -1,16 +1,25 @@
 <!DOCTYPE html>
 <html>
+
 <head>
 	<meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <!-- Font Families -->
+	<link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Advent+Pro" rel="stylesheet">
+    
     <!--Font Awesome Library Version 5.0.6-->
     <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
 	<title>Luis Ulloa</title>
+	
 	<!--Bootstrap Styles Version 3.3.7-->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
 	<!--Semantic UI Styles Version 2.2.13-->
 	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.13/semantic.min.css">
+	
 	<!--Local Styles-->
 	<link rel="stylesheet" type="text/css" href="assets/css/main.css">
 </head>
@@ -31,15 +40,15 @@
 		        <span class="icon-bar"></span>
 		      </button>
 		      <!--Logo & Brand-->
-		      <a class="navbar-brand" href="index.html"><span class="glyphicon glyphicon-fire" aria-hidden="true"></span> Pipistrello</a>
+		      <a class="navbar-brand" href="index.html"><i class="fas fa-fighter-jet"></i> Pipistrello</a>
 		    </div>
 
 		    <!--Menu Items on the Right (Collapsed on Mobile Version)-->
 		    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-		      <ul class="nav navbar-nav navbar-right">
-		        <li><a href="about.html">About</a></li>
-		        <li><a href="samples.html">Samples</a></li>
-		        <li><a href="#">Contact</a></li>
+		      <ul class="buttons nav navbar-nav navbar-right">
+		        <li><button type="button" id="button01" class="inactive">About</button></li>
+				<li><button type="button" id="button02" class="inactive">Samples</button></li>
+				<li><button type="button" id="button03" class="inactive">Contact</button></li>
 		      </ul>
 		    </div>
 
@@ -47,18 +56,22 @@
 		</nav><!--End Nav Bar-->
 	</header><!--End Primary Header Section-->
 
+	
 	<!--Secondary Header for Name and Tagline-->
-	<header>
+	<header id="tagline">
 		<div id="temp">
 			<h1>Luis Ulloa<br> <small>Self-taught Web Developer</small></h1>
 		</div>
 	</header><!--End Secondary Header Section-->
 
-	<!--Main Content Area-->
-	<main>
-		<div class="container">
-			<div class="row">
+	<main id="mainStage">
 
+		<!-- NOTE TO SELF:  FROM THIS LINE ON DOWN, RE-FACTOR MARKUP FOR BETTER READABILITY, MAINTENACE
+		AND SIMPLIFICATION.  MAY NEED TO CONSIDER SEPARATE FILES FOR EACH SECTION AND SUB-SECTION -->
+		
+		<!--******************************HOME PAGE CONTENT*********************************************-->
+		<section id="homeContent" class="container">
+			<div class="row">
 				<!--Left Pane-->
 				<div class="col-sm-4">
 					<div class="inner-shell">
@@ -69,7 +82,7 @@
 							<img src="assets/img/htmlSnippet.png" alt="HTML Markup Picture" class="thumbnail img-responsive">
 						</div>
 						<div class="contact-button sample-link">
-            				<button class="ui blue basic button" type="submit"><a href="samples.html">Samples</a></button>
+            				<button class="ui blue basic button view-samples" type="submit">Samples</button>
         				</div>
 					</div>
 				</div><!--End Left Pane-->
@@ -84,7 +97,7 @@
 							<img src="assets/img/cssSnippet.png" alt="CSS Styles Picture" class="thumbnail img-responsive">
 						</div>
 						<div class="contact-button sample-link">
-            				<button class="ui blue basic button" type="submit"><a href="samples.html">Samples</a></button>
+            				<button class="ui blue basic button view-samples" type="submit">Samples</button>
         				</div>
 					</div>
 				</div><!--End Center Pane-->
@@ -96,21 +109,267 @@
 							<h3>JavaScript</h3>
 						</div>
 						<div class="image-container">
-							<img src="assets/img/jsSnippet.png" alt="CSS Styles Picture" class="thumbnail img-responsive">
+							<img src="assets/img/jsSnippet.png" alt="JavaScript Code Picture" class="thumbnail img-responsive">
 						</div>
 						<div class="contact-button sample-link">
-            				<button class="ui blue basic button" type="submit"><a href="samples.html">Samples</a></button>
+            				<button class="ui blue basic button view-samples" type="submit">Samples</button>
         				</div>
 					</div>
 				</div><!--End Right Pane-->
+			</div><!--End Row 1-->
+		</section><!--******************************END HOME PAGE******************************-->
+
+		<!--******************************ABOUT CONTENT******************************-->
+		<section id="about" class="no_show">
+			<div class="container"><!--Parent Container-->
+				<div class="row inner-shell"><!--Parent Row-->
+					<div class="col-md-12">
+						<div class="pane-profile-pic">
+							<img src="assets/img/blueProfilePic.jpg" alt="Luis Ulloa's Picture" class="thumbnail img-responsive">
+						</div>
+						<div class="pane-title">
+							<h4>Who is Luis?</h4>
+						</div>
+						<div class="pane-blurb">
+							<p>I have discovered that one of my true passions is building elegant code to power great websites and applications.  As a result of this epiphany, I have been on a self-taught quest to become a full stack web developer and return to my tech roots (I have a degree in Electrical Engineering).  It has been a bumpy and exciting journey over the last several months, always learning a new trick while navigating around life events.
+							</p>
+							<p>I haven’t reached the level of tech nirvana that other developers have achieved - yet, but I feel confident enough to tackle any challenge on the front end of the stack, be it <span class="blue-highlight">HTML5</span>, <span class="blue-highlight">CSS3</span> (including <span class="blue-highlight">Bootstrap</span> and <span class="blue-highlight">Semantic UI</span>) or <span class="blue-highlight">JavaScript</span> (including <span class="blue-highlight">jQuery</span>).
+							</p>
+							<p>Ultimately, the goal is to become a super unicorn, namely that guru that can do full stack development along with UX/UI design and data science.  Crazy right? Yes, so don't let your guard down with me!  <span class="blue-highlight"><i class="far fa-hand-peace" aria-hidden="true"></i></span>
+							</p>
+						</div>
+					</div>
+					<div class="row"><!--Child Row for Button-->
+						<div class="contact-button">
+	            			<button id="button04" class="ui blue basic button" type="submit">Contact</button>
+	        			</div>
+					</div><!--End Child Row for Button-->
+				</div><!--End Parent Row-->
+			</div><!--End Parent Container-->
+		</section><!--******************************END ABOUT CONTENT******************************-->
+
+		<!--******************************SAMPLES CONTENT******************************-->
+		<section id="samples" class="no_show">
+			<div class="container">
+				<div class="row"><!--Start of Row 1-->
+
+					<!--Left Pane-->
+					<div class="col-sm-4">
+						<div class="inner-shell">
+							<div class="pane-title left-pane">
+								<h3 class="title-text">Brewery App</h3>
+							</div>
+							<div class="sample-holder">
+								<div id="sample01" class="sample">
+									<p class="short-summary">
+										Bare bones app to add your favorite fake or real brewery...
+									</p>
+								</div>
+							</div>
+							<div class="contact-button sample-link">
+	            				<button class="ui blue basic button open-the-sample" type="submit">View</button>
+	        				</div>
+	        				<div class="sample-window open-samples">
+							  <!-- Modal content -->
+							  <div class="samples-content">
+							    <span class="close">&times;</span>
+							    <div>
+							    	<h3>Brewery App</h3>
+							    	<img src="assets/img/cervezas.png">
+							    	<p>Bare bones app to add your favorite fake or real brewery...</p>	
+							    </div>
+							  </div>
+							</div>
+						</div>
+					</div><!--End Left Pane-->
+					
+					<!--Center Pane-->
+					<div class="col-sm-4">
+						<div class="inner-shell">
+							<div class="pane-title left-pane">
+								<h3 class="title-text">Visual Blog</h3>
+							</div>
+							<div class="sample-holder">
+								<div id="sample02" class="sample">
+									<p class="short-summary">
+										Very simple app to add your pictures and short blurb about it...
+									</p>
+								</div>
+							</div>
+							<div class="contact-button sample-link">
+	            				<button class="ui blue basic button open-the-sample" type="submit"><a href="#">View</a></button>
+	        				</div>
+	        				<div class="sample-window open-samples">
+							  <!-- Modal content -->
+							  <div class="samples-content">
+							    <span class="close">&times;</span>
+							    <div>
+							    	<h3>Visual Blog</h3>
+							    	<img src="assets/img/cervezas.png">
+							    	<p>Very simple app to add your pictures and short blurb about it...</p>	
+							    </div>
+							  </div>
+							</div>
+						</div>
+					</div><!--End Center Pane-->
+
+					<!--Right Pane-->
+					<div class="col-sm-4">
+						<div class="inner-shell">
+							<div class="pane-title left-pane">
+								<h3 class="title-text">Patatap Clone</h3>
+							</div>
+							<div class="sample-holder">
+								<div id="sample03" class="sample">
+									<p class="short-summary">
+										My version of animated Patatap game with sound and shape animations...
+									</p>
+								</div>
+							</div>
+							<div class="contact-button sample-link">
+	            				<button class="ui blue basic button open-the-sample" type="submit"><a href="#">View</a></button>
+	        				</div>
+	        				<div class="sample-window open-samples">
+							  <!-- Modal content -->
+							  <div class="samples-content">
+							    <span class="close">&times;</span>
+							    <div>
+							    	<h3>Patatap Clone</h3>
+							    	<img src="assets/img/cervezas.png">
+							    	<p>My version of animated Patatap game with sound and shape animations...</p>	
+							    </div>
+							  </div>
+							</div>
+						</div>
+					</div><!--End Right Pane-->
+
+				</div><!--End of Row 1-->
+
+				<div class="row"><!--Start of Row 2-->
+
+					<!--Left Pane-->
+					<div class="col-sm-4">
+						<div class="inner-shell">
+							<div class="pane-title left-pane">
+								<h3 class="title-text">Interactive Task List</h3>
+							</div>
+							<div class="sample-holder">
+								<div id="sample04" class="sample">
+									<p class="short-summary">
+										Very simple and neat ToDo list based on jQuery methods...
+									</p>
+								</div>
+							</div>
+							<div class="contact-button sample-link">
+	            				<button class="ui blue basic button open-the-sample" type="submit"><a href="#">View</a></button>
+	        				</div>
+	        				<div class="sample-window open-samples">
+							  <!-- Modal content -->
+							  <div class="samples-content">
+							    <span class="close">&times;</span>
+							    <div>
+							    	<h3>Interactive Task List</h3>
+							    	<img src="assets/img/cervezas.png">
+							    	<p>Very simple and neat ToDo list based on jQuery methods...</p>	
+							    </div>
+							  </div>
+							</div>
+						</div>
+					</div><!--End Left Pane-->
+					
+					<!--Center Pane-->
+					<div class="col-sm-4">
+						<div class="inner-shell">
+							<div class="pane-title left-pane">
+								<h3 class="title-text">Guessing Color Game</h3>
+							</div>
+							<div class="sample-holder">
+								<div id="sample05" class="sample">
+									<p class="short-summary">
+										Guess the color based on RGB code presented on top by clicking...
+									</p>
+								</div>
+							</div>
+							<div class="contact-button sample-link">
+	            				<button class="ui blue basic button open-the-sample" type="submit"><a href="#">View</a></button>
+	        				</div>
+	        				<div class="sample-window open-samples">
+							  <!-- Modal content -->
+							  <div class="samples-content">
+							    <span class="close">&times;</span>
+							    <div>
+							    	<h3>Guessing Color Game</h3>
+							    	<img src="assets/img/cervezas.png">
+							    	<p>Guess the color based on RGB code presented on top by clicking...</p>	
+							    </div>
+							  </div>
+							</div>
+						</div>
+					</div><!--End Center Pane-->
+
+					<!--Right Pane-->
+					<div class="col-sm-4">
+						<div class="inner-shell">
+							<div class="pane-title left-pane">
+								<h3 class="title-text">Landing Page</h3>
+							</div>
+							<div class="sample-holder">
+								<div id="sample06" class="sample">
+									<p class="short-summary">
+										Beautiful and elegant landing page of a fictional pet matching app...
+									</p>
+								</div>
+							</div>
+							<div class="contact-button sample-link">
+	            				<button class="ui blue basic button open-the-sample" type="submit"><a href="#">View</a></button>
+	        				</div>
+	        				<div class="sample-window open-samples">
+							  <!-- Modal content -->
+							  <div class="samples-content">
+							    <span class="close">&times;</span>
+							    <div>
+							    	<h3>Landing Page</h3>
+							    	<img src="assets/img/cervezas.png">
+							    	<p>Beautiful and elegant landing page of a fictional pet matching app...</p>	
+							    </div>
+							  </div>
+							</div>
+						</div>
+					</div><!--End Right Pane-->
+
+				</div><!--End of Row 2-->
 
 			</div>
-		</div>
+		</section><!--***************************END SAMPLES CONTENT****************************-->
 
-	</main><!--End Main Content Area-->
+		<!--***************************CONTACT PAGE CONTENT****************************-->
+		<section id="contact" class="no_show">
+			<main class="parent">
+
+				<form class="contact-form" action="/send_message/" method="post">
+			
+					<fieldset name="send_message">
+						<label for="your_name">Name</label>
+						<input type="text" name="your_name" id="your_name" placeholder="Enter name..." required>
+
+						<label for="email">Email</label>
+						<input type="email" name="email" id="email" placeholder="mojito@craftbeer.com" required>
+
+						<label for="message">Message</label>
+						<input type="text" name="message" id="message" placeholder="Tell me everything..." required>
+					</fieldset>
+
+					<button type="submit">Send Message</button>
+				</form>
+			</main>
+			<div class="disclaimer">
+				<p>This beautiful contact form is not connected to a server yet, it's just to showcase my skills.  Therefore, the information will disappear after you hit submit.  I know, sorry for the tease.  I promise to connect it soon.  In the meantime, feel free to contact me via any of the social media links below.</p>
+			</div>
+		</section><!--***************************END CONTACT PAGE CONTENT****************************-->
+	</main>
 
 	<footer class="container-fluid">
-		<div class="tagline col-xs-6 col-sm-4">
+		<div class="tagline01 col-xs-6 col-sm-4">
 			<h6>Made in Metro Atlanta with great  <i class="fas fa-music" aria-hidden="true"></i>
 				<br>moderate amounts of  <i class="fas fa-beer" aria-hidden="true"></i>
 				<br>and lots of perseverance!
@@ -126,12 +385,15 @@
 		 </div>
 	</footer>
 
-
-
-<!--jQuery-->
+	<!--jQuery-->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 	<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
-<!--Bootstrap JavaScript Code-->
+	
+	<!--Bootstrap JavaScript Code-->
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+	
+	<!--Local jQuery-->
+	<script type="text/javascript" src="assets/js/main.js"></script>
+	
 </body>
 </html>
