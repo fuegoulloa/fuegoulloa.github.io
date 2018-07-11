@@ -33,6 +33,8 @@ Things to fix on mobile version:
 </head>
 
 <body>
+	<div id="page-container"><!-- Hack, for now, to keep footer stuck to the bottom until new version of page is uploaded -->
+	<div id="content-wrap"><!-- Hack, for now, to keep footer stuck to the bottom until new version of page is uploaded -->
 	<!--Primary Header, on top, contains Nav Bar-->
 	<header class="container-fluid">
 		<!--Navigation Bar -->
@@ -375,8 +377,9 @@ Things to fix on mobile version:
 			</div>
 		</section><!--***************************END CONTACT PAGE CONTENT****************************-->
 	</main>
+	</div><!-- End of #content-wrap div element (Hack solution for footer) -->
 
-	<footer class="container-fluid">
+	<footer id="footer" class="container-fluid">
 		<div class="tagline01 col-xs-6 col-sm-4">
 			<h6>Made in Metro Atlanta with great  <i class="fas fa-music" aria-hidden="true"></i>
 				<br>moderate amounts of  <i class="fas fa-beer" aria-hidden="true"></i>
@@ -392,7 +395,8 @@ Things to fix on mobile version:
 		  	<a href="https://twitter.com/lulloa76" target="_blank"><i class="fab fa-twitter-square" aria-hidden="true"></i></a>
 		 </div>
 	</footer>
-
+	</div><!-- End of #page-container div element (Hack solution for footer) -->
+	
 	<!--jQuery-->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 	<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
