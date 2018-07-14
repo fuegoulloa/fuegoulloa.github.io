@@ -120,36 +120,30 @@ a {
 
 .image-container {
 	width: 85%;
+	height: 200px;
+	border-radius: 10px;
 	margin: 0 auto;
+	background-position: top left;
 }
 
 #left {
-	height: 200px;
-	border-radius: 10px;
 	background-image: url("../../assets/img/html-BW.png");
-	background-position: top left;
-}
-
-#center {
-	height: 200px;
-	border-radius: 10px;
-	background-image: url("../../assets/img/css-BW.png");
-	background-position: top left;
-}
-
-#right {
-	height: 200px;
-	border-radius: 10px;
-	background-image: url("../../assets/img/js-BW.png");
-	background-position: top left;
 }
 
 #left:hover {
 	background-image: url("../../assets/img/html-Color.png");
 }
 
+#center {
+	background-image: url("../../assets/img/css-BW.png");
+}
+
 #center:hover {
 	background-image: url("../../assets/img/css-Color.png");
+}
+
+#right {
+	background-image: url("../../assets/img/js-BW.png");
 }
 
 #right:hover {
@@ -233,29 +227,53 @@ a {
 }
 
 #sample01 {
-	background-image: url("../../assets/img/beerApp.png");
+	background-image: url("../../assets/img/beerApp-BW.png");
 	background-position: top left;
+}
+
+#sample01:hover {
+	background-image: url("../../assets/img/beerApp-Color.png");
 }
 
 #sample02 {
-	background-image: url("../../assets/img/visualBlog.png");
+	background-image: url("../../assets/img/visualBlog-BW.png");
 	background-position: top left;
 }
 
+#sample02:hover {
+	background-image: url("../../assets/img/visualBlog-Color.png");
+}
+
 #sample03 {
-	background-image: url("../../assets/img/pataTap.png");
+	background-image: url("../../assets/img/pataTap-BW.png");
+}
+
+#sample03:hover {
+	background-image: url("../../assets/img/pataTap-Color.png");
 }
 
 #sample04 {
-	background-image: url("../../assets/img/taskList.png");
+	background-image: url("../../assets/img/taskList-BW.png");
+}
+
+#sample04:hover {
+	background-image: url("../../assets/img/taskList-Color.png");
 }
 
 #sample05 {
-	background-image: url("../../assets/img/colorGame.png");
+	background-image: url("../../assets/img/colorGame-BW.png");
+}
+
+#sample05:hover {
+	background-image: url("../../assets/img/colorGame-Color.png");
 }
 
 #sample06 {
-	background-image: url("../../assets/img/landingPage.png");
+	background-image: url("../../assets/img/landingPage-BW.png");
+}
+
+#sample06:hover {
+	background-image: url("../../assets/img/landingPage-Color.png");
 }
 
 /*--------------------------------*/
