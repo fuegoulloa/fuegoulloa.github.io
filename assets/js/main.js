@@ -10,14 +10,40 @@ var tagLine = document.querySelector("#tagline");
 var tagline02 = document.querySelector("#tagline h1");
 var homeContent = document.querySelector("#homeContent");
 var viewSamples = document.querySelectorAll(".view-samples");
+var viewMore = document.querySelector("#view-more");
+var hideRow = document.querySelector("#hide-row");
 
-//Actions for menu items on nav bar
+//These two actions are to show an additional row of samples on Samples Page
+viewMore.addEventListener("mouseover", function() {
+	this.style.cursor = "pointer";
+});
+
+viewMore.addEventListener("click", function() {
+	document.querySelector("#row-2").classList.remove("no_show");
+	this.style.display = "none";
+});
+//**************************************************************************
+
+//These two actions hide the 2nd row of samples on Samples Page
+hideRow.addEventListener("mouseover", function() {
+	this.style.cursor = "pointer";
+});
+
+hideRow.addEventListener("click", function() {
+	document.querySelector("#row-2").classList.add("no_show");
+	viewMore.style.display = "block";
+});
+//**************************************************************************
+
+//Actions for menu items on nav bar **************
 button01.addEventListener("click", showAbout);
 button02.addEventListener("click", showSamples);
 button03.addEventListener("click", showContact);
 button04.addEventListener("click", showContact);
+//************************************************
 
-//This code is for the three sample buttons on the homepage
+
+//This code is for the three sample buttons on the homepage ****************
 viewSamples.forEach(function(item, idx) {
 	viewSamples[idx].addEventListener("click", showSamples);
 });
@@ -47,10 +73,10 @@ closeWindow.forEach(function(item, idx) {
     	}
 	});
 });
-//This is the end of code for samples popup windows
+//This is the end of code for samples popup windows ***************************
 
-//////////////////////////////////////////////////////////////////////
-//Function Declarations from this point on down
+
+//Function Declarations from this point on down *******************************
 
 function showAbout() {
 	button01.classList.remove("inactive");

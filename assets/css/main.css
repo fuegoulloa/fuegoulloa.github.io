@@ -23,7 +23,7 @@ h3, h4, .sample-link {
     color: #00a6ff;	
 }
 
-h6 small {
+h5 small, h6 small {
 	font-size: 85%;
 	font-weight: bold;
 	color: #b0e3ff;
@@ -420,8 +420,11 @@ p {
 	text-align: justify;
 }
 
-.github-link {
+.view-link {
+	width: 65px;
 	padding-top: 10px;
+	padding-bottom: 20px;
+	margin: 0 auto;
 	text-align: center;
 };
 
