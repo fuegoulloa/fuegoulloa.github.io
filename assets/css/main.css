@@ -123,6 +123,39 @@ a {
 	margin: 0 auto;
 }
 
+#left {
+	height: 200px;
+	border-radius: 10px;
+	background-image: url("../../assets/img/html-BW.png");
+	background-position: top left;
+}
+
+#center {
+	height: 200px;
+	border-radius: 10px;
+	background-image: url("../../assets/img/css-BW.png");
+	background-position: top left;
+}
+
+#right {
+	height: 200px;
+	border-radius: 10px;
+	background-image: url("../../assets/img/js-BW.png");
+	background-position: top left;
+}
+
+#left:hover {
+	background-image: url("../../assets/img/html-Color.png");
+}
+
+#center:hover {
+	background-image: url("../../assets/img/css-Color.png");
+}
+
+#right:hover {
+	background-image: url("../../assets/img/js-Color.png");
+}
+
 .thumbnail {
 	border-radius: 10px;
 	border: transparent;
