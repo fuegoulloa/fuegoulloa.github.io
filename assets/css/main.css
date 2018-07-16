@@ -130,24 +130,12 @@ a {
 	background-image: url("../../assets/img/html-BW.png");
 }
 
-#left:hover {
-	background-image: url("../../assets/img/html-Color.png");
-}
-
 #center {
 	background-image: url("../../assets/img/css-BW.png");
 }
 
-#center:hover {
-	background-image: url("../../assets/img/css-Color.png");
-}
-
 #right {
 	background-image: url("../../assets/img/js-BW.png");
-}
-
-#right:hover {
-	background-image: url("../../assets/img/js-Color.png");
 }
 
 .thumbnail {
@@ -231,49 +219,25 @@ a {
 	background-position: top left;
 }
 
-#sample01:hover {
-	background-image: url("../../assets/img/beerApp-Color.png");
-}
-
 #sample02 {
 	background-image: url("../../assets/img/visualBlog-BW.png");
 	background-position: top left;
-}
-
-#sample02:hover {
-	background-image: url("../../assets/img/visualBlog-Color.png");
 }
 
 #sample03 {
 	background-image: url("../../assets/img/pataTap-BW.png");
 }
 
-#sample03:hover {
-	background-image: url("../../assets/img/pataTap-Color.png");
-}
-
 #sample04 {
 	background-image: url("../../assets/img/pigGame-BW.png");
-}
-
-#sample04:hover {
-	background-image: url("../../assets/img/pigGame-Color.png");
 }
 
 #sample05 {
 	background-image: url("../../assets/img/colorGame-BW.png");
 }
 
-#sample05:hover {
-	background-image: url("../../assets/img/colorGame-Color.png");
-}
-
 #sample06 {
 	background-image: url("../../assets/img/landingPage-BW.png");
-}
-
-#sample06:hover {
-	background-image: url("../../assets/img/landingPage-Color.png");
 }
 
 /*--------------------------------*/
