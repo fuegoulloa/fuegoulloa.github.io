@@ -44,6 +44,12 @@ a {
 	margin-top: 20px;
 }
 
+#alert {
+	text-align: center;
+	text-decoration: underline;
+	display: block;
+}
+
 .container-fluid {
 	background-color: #00a6ff;
 }
