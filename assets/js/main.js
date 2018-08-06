@@ -86,6 +86,9 @@ function showAbout() {
 	tagline.classList.add("no_show");
 	homeContent.classList.add("no_show");
 
+	document.querySelector("#alert").classList.remove("blue-highlight");
+	document.querySelector("#alert").classList.add("no_show");
+
 		if(button02.classList[0]="active") {
 			button02.classList.remove("active");
 			button02.classList.add("inactive");
@@ -109,6 +112,9 @@ function showSamples() {
 	homeContent.classList.add("no_show");
 	tagline02.textContent = "Code Samples";
 
+	document.querySelector("#alert").classList.remove("blue-highlight");
+	document.querySelector("#alert").classList.add("no_show");
+
 		if(button01.classList[0]="active") {
 			button01.classList.remove("active");
 			button01.classList.add("inactive");
@@ -130,6 +136,9 @@ function showContact() {
 	homeContent.classList.add("no_show");
 	tagline.classList.remove("no_show");
 	tagline02.textContent = "Holler at me!";
+
+	document.querySelector("#alert").classList.remove("blue-highlight");
+	document.querySelector("#alert").classList.add("no_show");
 
 		if(button01.classList[0]="active") {
 			button01.classList.remove("active");
