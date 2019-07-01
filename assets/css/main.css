@@ -4,7 +4,7 @@
 
 body {
 	background-color: #f9f9fa;
-	/*background-color: #007bff;*/
+	/*background-color: #00a6ff;*/
 }
 
 h1, .h1 {
@@ -26,7 +26,7 @@ h3, h4, .sample-link {
 h5 small, h6 small {
 	font-size: 85%;
 	font-weight: bold;
-	color: #b0e3ff;
+	color: #007bff;
 }
 
 h6, .h6 {
@@ -174,13 +174,13 @@ a {
 .btn-default {
     color: #fff;
     background-color: #007bff;
-    border-color: #b0e3ff;
+    border-color: #007bff;
 }
 
 .btn-default:hover {
     color: #fff;
-    background-color: #0096e6;
-    border-color: #b0e3ff;
+    background-color: #007bff;
+    border-color: #007bff;
 }
 
 #button {
