@@ -388,7 +388,7 @@ p {
 .description {
 	width: 90%;
 	margin: 0 auto;
-	text-align: justify;
+	text-align: center;
 }
 
 .view-link {
