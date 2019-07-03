@@ -5,9 +5,16 @@
 body, html {
 	height: 100%;
 	margin: 0;
+	background-color: #007bff;
 }
 
 canvas {
 	width: 100%;
 	background-color: black;
+}
+
+h3	{
+	font-family: lato;
+	color: #fff;
+	text-align: center;
 }
