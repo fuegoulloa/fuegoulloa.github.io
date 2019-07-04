@@ -5,7 +5,9 @@
 body, html {
 	height: 100%;
 	margin: 0;
+	color: #fff;
 	background-color: #007bff;
+	font-family: lato;
 }
 
 canvas {
@@ -13,8 +15,23 @@ canvas {
 	background-color: black;
 }
 
-h3	{
-	font-family: lato;
+h3 {
+	margin-left: 40%;
+}
+
+a {
 	color: #fff;
-	text-align: center;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #fff;
+}
+
+.logo {
+    float: left;
+    height: 50px;
+    padding: 1px 15px 1px 50px;
+    font-size: 18px;
+    line-height: 20px;
 }
